@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about_me_style.css">
+</head>
+<body>
+    <div class="home"><a href="./index.html"><h2>Back to Website</h2></a></div>
+    <h1>About me</h1>
+        <hr>
+    <div class="info">
+        <div><p class="p1">I'm <b>JOHN MATHEW LOREN</b>, I'm a self thought web developer.
+            My goal for learning programming is to create something fun and share it to the people.
+            I first learn python and now I'm learning vanilla javascript with react to the front end and node.js to the backend.
+         </p>
+         <br>
+         <p class="p1">I also like to draw, since I was in highschool. I draw a lot and most of my artworks are portraits of my favorite celebrities yeah my idols.
+            Creating things is just my way of escaping to the sad reality of life.
+         </p>
+        </div>
+        
+         <!-- <p>My first forray to programming is when I bought a laptop and thinking about how the technology works,
+            and ask google questions about programming. Luckily my brother bought a udemy course about python programming "<b>100 Days of Code: The Complete Python Pro Bootcamp</b>" by Angela Yu.
+            "I recommend it to you if you want to start programming". 
+         </p>
+         <p>After a few days of writing code, I got hooked to it and reach to the point that I can't sleep thinking about the solution of the bug.
+            I spend most of my time after with 7am to 7:30pm work to my full-time job as a factory worker in a metal fabrication company.
+         </p>
+         <p>Coding is fun to learn, it gives you challenges to solve problems and not only solving problems. It also give you the feeling of like a dopamine rush when you solve the problem.
+            Yuh it's not just solving problems, it also gives you the freedom to create, the term "<b>think, build and create</b>". 
+         </p> -->
+
+        <div class="art_page">
+            <h2>My Art works</h2>
+            <ul>
+                <li><img class= "clickable_photo" src="./assets/artworks/cr7.jpg" width="250" height="333" alt="">
+                    <p><b>Cristiano Ronaldo</b></p>
+                <p><b>Date:</b> 2014-2015</p></li>
+                <li><img class= "clickable_photo" src="./assets/artworks/deadpool.jpg" width="250" alt=""><p><b>Deadpool</b></p>
+                <p><b>Date:</b> 2015-2016</p></li>
+                <li><img class= "clickable_photo" src="./assets/artworks/jb.jpg" alt="" width="250"><p><b>Justin Bieber</b></p>
+                <p><b>Date:</b> 2015-2016</p></li>
+                <li><img class= "clickable_photo" src="./assets/artworks/lisa.jpg" alt="" width="250"><p><b>Lisa Manoban</b></p>
+                <p><b>Date:</b> 2022-2023</p></li>
+            </ul>
+            <div class="modal" id="modal">
+                <img id="modalImg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const photos = document.querySelectorAll('.clickable_photo');
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modalImg');
+        
+        photos.forEach(photo => {
+            photo.addEventListener('click', () => {
+                modalImg.src = photo.src;
+                modal.style.display = 'flex'
+                modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'
+            });
+        });
+
+        modal.addEventListener('click', () => {
+            modal.style.display = 'none'
+        });
+        // photos.forEach(photo => {
+        //     photo.addEventListener('click', () => {
+        //         photos.forEach(p => p.classList.remove('enlarged'));
+        //         photo.classList.add('enlarged');
+        //     });
+        // });
+    </script>
+</body>
+</html>

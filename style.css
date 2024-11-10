@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.head{
+    background-color: #C6E7FF;
+    color: midnightblue;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.navbar {
+    text-align: center;
+    background-color: #D4F6FF;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.navbar a {
+    text-decoration: none;
+    color: midnightblue;
+}
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.container{
+    display: inline-block;
+}
+
+.card1 {
+    margin-top: 10px;
+    width: 55%;
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid #D4F6FF;
+}
+
+.right {
+    float: right;
+}
+
+.card2 {
+    width: 40%;
+    border: 1px solid #D4F6FF;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.img1 {
+    float: left;
+    margin-right: 10px;
+}
+
+.artwork {
+    width: 200px;
+    margin: 10px;
+}
+
+.art ul li{
+    list-style: none;
+}
+
+.card3 {
+    padding: 20px;
+    width:100%;
+    border: 1px solid #D4F6FF;
+    border-radius: 5px;
+    background-color: #C6E7FF;
+    display: inline-block;
+    text-align: center;
+    color: midnightblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.p-container{
+    width: 100%;
+    border: 1px solid #D4F6FF;
+}
+p {
+    margin-left: 10px;
+    margin-top: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2 {
+    margin-left: 5px;
+}
+
+
+@media (max-width: 450px) {
+    h2 {
+        font-size: smaller;
+        text-align: justify;
+    }
+    .card1 {
+        width: 100%;
+        display: block;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .card2 {
+        width: 100%;
+        display: block;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .card3 {
+        width: 100%;
+        display: block;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .head {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        width: 100%;    
+        padding-left: 0;
+        text-align: left;
+    }
+    img {
+        display: inline;
+        margin-bottom: 20px;
+        width: 100%;
+        object-fit: cover;
+    }
+    p {
+        font-size: smaller;
+        margin: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+        width: 100%;
+        padding-left: 0;
+        margin: 5px;
+    }
+    .navbar{
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+}

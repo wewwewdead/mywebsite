@@ -111,6 +111,8 @@ h2 {
     .nav-column ul li{
         display: none;
     }
+    button {
+        display: none;
 }
 
 

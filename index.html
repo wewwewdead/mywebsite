@@ -40,10 +40,17 @@
 </body>
 <script>
     const menu = document.querySelector('.menu');
+    const toggleButton = document.querySelector('.toggle')
 
     function toggleBar() {
         menu.classList.toggle('activate')
     }
+
+    document.addEventListener('click', e => {
+        if(!menu.contains(e.target) && e.target !== toggleButton) {
+            menu.classList.remove('activate')
+        }
+    })
 
 </script>
 </html>

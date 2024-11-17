@@ -6,7 +6,7 @@
 }
 body {
     height: 1000vh;
-    width: 100wh;
+    width: 100%;
 }
 span{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -74,23 +74,34 @@ h1{
     position: fixed;
     top: 21%;
     flex-wrap: wrap;
-    overflow: scroll;
+    overflow-y: scroll;
     z-index: 999;
 
 }
+
 .box{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    height: 100%;
 }
-.title{
+.box img{
+    width: 100px;
+}
+.box > .title{
     display: inline-flex;
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
 }
+.blogs {
+    margin-top: 20px;
+}
 .content{
     text-align: left;
+    margin: 2px;
     margin-left: 20px;
     font-size: .8rem;
 }
@@ -117,6 +128,7 @@ h1{
     .menu{
         display: none;
         top: 100px;
+
     }
     .navbar ul{
         padding-left: 2rem;
@@ -146,6 +158,17 @@ h1{
         font-size: 1.5rem;
         padding-top: 0.5rem;
         padding-left: .5rem;
+    }
+    .card{
+        left: 0px;
+        top: 100px;
+        width: 100%;
+    }
+    .navbar ul::-webkit-scrollbar{
+        width: 0;
+    }
+    .navbar ul{
+        overflow-x: auto;
     }
 
 }

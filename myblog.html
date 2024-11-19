@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1><span>The</span>Loren</h1></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">X</a></li>
+            <li><a href="">Contact</a></li>
+            
+        </ul>
+    </div>
+    </nav>
+    <div class="container">
+        <div class="menu">
+            <div class="box">
+                <span class="title">My Art Portfolio</span>
+            <p class="content">Lisa Manoban</p>
+            <p class="content">DeadPool</p>
+            <span class="title blogs">My Blogs</span>
+            <a class="a-content" href="myblog.html">Looking back the old days</a>
+            </div>
+            
+        </div>
+        <button class="toggle" onclick="toggleBar()">☰</button>
+        <div class="card">
+            <div class="cardbox">
+                <h1 class="content-title">Looking back the old days</h1>
+                <p class="card-content">It's so weird when you look back on life. Thinking about when I came to korea feels like so long ago.</p>
+
+                <img class="blog_photo" src="./assets/images/photo1.jpg" alt="">
+                <p class="card-content">When I see this photo. I remember we were roaming around the streets of cebu, from
+                    Lapu-Lapu City to Danao.
+                </p>
+
+                <p class="card-content">Riding our bikes going everywhere with only 20 pesos in our pockets <span>"for dehydration"</span>
+                we didn't have any money obviously.</p>
+
+                <p class="card-content">At that moment I realized that Cebu felt like a huge place that was impossible to figure out.
+                    Now I'm in South Korea and I feel Cebu is like a tiny place surrounded by waters with hot summer weather.
+    
+                <p class="card-content">My final thoughts is that people today are seems all connected.
+                    Some of them are fake and only come to you because you have something to give. They don't care about you, the most important in our life is ourself, our family and our close friends.
+                    Remember that you should exactly try to do what you want to do and be who want to be in life.
+                    Set goals and achieve your dreams no watter the odds.
+
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+<script>
+    const menu = document.querySelector('.menu');
+    const toggleButton = document.querySelector('.toggle')
+
+    function toggleBar() {
+        menu.classList.toggle('activate')
+    }
+
+    document.addEventListener('click', e => {
+        if(!menu.contains(e.target) && e.target !== toggleButton) {
+            menu.classList.remove('activate')
+        }
+    })
+
+</script>
+</html>

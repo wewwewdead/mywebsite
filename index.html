@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1><span>The</span>Loren</h1></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">X</a></li>
+            <li><a href="">Contact</a></li>
+            
+        </ul>
+    </div>
+    </nav>
+    <div class="container">
+        <div class="menu">
+            <div class="box">
+                <span class="title">My Art Portfolio</span>
+            <p class="content">Lisa Manoban</p>
+            <p class="content">DeadPool</p>
+            <span class="title blogs">My Blogs</span>
+            <a class="a-content" href="myblog.html">Looking back the old days</a>
+            </div>
+            
+        </div>
+        <button class="toggle" onclick="toggleBar()">☰</button>
+        <div class="card">
+            <div class="cardbox">
+                <p class="card-content">Hi </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    const menu = document.querySelector('.menu');
+    const toggleButton = document.querySelector('.toggle')
+
+    function toggleBar() {
+        menu.classList.toggle('activate')
+    }
+
+    document.addEventListener('click', e => {
+        if(!menu.contains(e.target) && e.target !== toggleButton) {
+            menu.classList.remove('activate')
+        }
+    })
+
+</script>
+</html>

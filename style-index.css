@@ -177,4 +177,6 @@ em {
     .nav-bar > * {
         padding-left: 2rem;
     }
+    .nav-bar {
+        width: 80%;
 }

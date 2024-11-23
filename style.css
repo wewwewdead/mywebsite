@@ -103,15 +103,15 @@ p{
     }
     .main-body {
         left: 0;
-        width: 85%;
+        width: 80%;
     }
     .box{
         left: 0;
-        width: 85%;
+        width: 80%;
     }
     .column-footer {
         left: 0;
-        width: 85%;
+        width: 80%;
     }
     .nav-bar > * {
         padding-left: 2rem;

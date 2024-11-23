@@ -116,4 +116,7 @@ p{
     .nav-bar > * {
         padding-left: 2rem;
     }
+    .nav-bar {
+        width: 85%;
+    }
 }

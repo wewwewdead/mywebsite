@@ -62,7 +62,7 @@
     });
     document.addEventListener('click', e => {
         if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
-            sidebar.classList.toggle('activate')
+            sidebar.classList.remove('activate')
         }
     })
 </script>

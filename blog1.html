@@ -30,7 +30,7 @@
         <img src="./assets/images/profile/photo1.jpg" alt="">
         <p class="description">April, 06, 2021</p>
         <p>What if I can go back in time. I was thinking about this all the time, it don't really make sense but if I can go back, I would.
-            Because when I was 18, I really don't know what to do and what I'm doing.
+            Because when I was 18, I really don't know what do and what I'm doing.
         </p>
         <h2>2017</h2>
         <p>2017 is an interesting year for me:</p>
@@ -125,5 +125,10 @@
     toggleButton.addEventListener('click', e => {
         sidebar.classList.toggle('activate');
     });
+    document.addEventListener('click', e => {
+        if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
+            sidebar.classList.toggle('activate')
+        }
+    })
 </script>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <div class="pagetop">
+        <div class="logo"><a href="./loren.html"><img src="./assets/images/logo.png" alt="" width="60px"></a></div>
+    </div>
+    <div class="nav-bar">
+        <button class="togglebutton">☰</button>
+        <a href="./index.html">Home</a>
+        <a href="./aboutme.html">About me</a>
+        <a href="">The Founder</a>
+        <a href="./loren.html">The Loren</a>
+        <a href="">FAQ</a>
+    </div>
+    <div class="sidebar">
+        <div class="menu">
+            <h2 class="menu-title"><em>My blogs</em></h2>
+            <p><a href="">If I can go back to 2019</a></p>
+
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="intro">
+            <h1>Hi Welcome</h1>
+            <h1>to my <span>WEBSITE</span></h1>
+            <br>
+            <hr>
+            <br>
+            <h3>Founded on <em>November 11, 2024</em></h3>
+            <br>
+            <h3>Built by me using <em>HTML, CSS</em> and <em>JAVASCRIPT</em></h3>
+        </div>
+        <div class="full-logo"><img id="full-logo" src="./assets/images/favicon1.png" alt=""></div>
+    </div>
+    <div class="second-body">
+        <div class="title"><h2 class="my-socials">My <span>Socials</span</h2></div>
+        <div class="icons">
+            <div class="socials-icons"><a href="https://www.facebook.com/johnmathew.loren/" target="_blank"><img src="./assets/images/socials/facebook.png" alt=""></a></div>
+            <div class="socials-icons"><a href=https://www.instagram.com/johnmathewloren/" target="_blank"><img src="./assets/images/socials/instagram.png" alt=""></a></div>
+            <div class="socials-icons"><a href="https://x.com/LorenJohnmathew" target="_blank"><img src="./assets/images/socials/twitter.png" alt=""></a></div>
+        </div>
+    </div>
+    <div class="column-footer">
+        <div class="footer"><p>© The Loren</p></div>
+    </div>
+    
+ 
+    
+</body>
+<script>
+    const logo = document.getElementById('full-logo');
+
+    logo.addEventListener('click', e => {
+        window.location.href = './loren.html';
+    });
+    
+    const sidebar = document.querySelector('.sidebar');
+    const toggleButton = document.querySelector('.togglebutton');
+
+    toggleButton.addEventListener('click', e => {
+
+        sidebar.classList.toggle('activate');
+    });
+</script>
+</html>

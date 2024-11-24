@@ -60,5 +60,10 @@
     toggleButton.addEventListener('click', e => {
         sidebar.classList.toggle('activate');
     });
+    document.addEventListener('click', e => {
+        if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
+            sidebar.classList.toggle('activate')
+        }
+    })
 </script>
 </html>

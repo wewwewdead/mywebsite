@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pagetop {
+    width: 100%;
+    position: fixed;
+    height: 56px;
+    display: flex;
+    background-color: white;
+    z-index: 10;
+}
+.logo{
+    display: flex;
+    height: 100%;
+    padding-left: 10px;
+}
+.nav-bar {
+    position: fixed;
+    z-index: 2;
+    top: 56px;
+    background-color: #1C325B;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px 10px;
+    z-index: 5;
+
+}
+.nav-bar::-webkit-scrollbar {
+    display: none;
+}
+.nav-bar > *{
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.togglebutton {
+    display: none;
+    background-color: #0f1b31;
+    border: none;
+    
+}
+.sidebar {
+    display: none;
+    height: 100%;
+    width: 230px;
+    background-color: transparent;
+    position: fixed;
+    z-index: 4;
+}
+.menu {
+    display: inline-block;
+    background-color: #e6e6e6;
+    position: relative;
+    width: 230px;
+    height: 100%;
+    top: 97px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+.menu-title{
+    padding: 10px 25px;
+    text-align: left;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: 550;
+    text-align: center;
+}
+.main-body {
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    left: 230px;
+    position: relative;
+    top: 100px;
+    padding: 16px 32px 32px 32px;
+    height: 100%;
+    gap: 20px;
+}
+.intro{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+}
+span {
+    color: #00a651;
+    font-style: italic;
+    font-weight: 900;
+}
+.full-logo > *{
+   height: 225px;
+   cursor: pointer;
+}
+.full-logo {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #9f9f9f;
+    font-size: 1rem;
+}
+em {
+    color: black;
+}
+.second-body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    left: 230px;
+    position: relative;
+    top: 100px;
+    padding: 16px 32px 32px 32px;
+    height: 100%;
+    gap: 20px;
+}
+
+.my-socials{
+    text-align: center;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.socials-icons img{
+    width: 100px;
+    
+    object-fit: contain;
+}
+.column-footer {
+    left: 230px;
+    width: 73%;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color:  rgb(248, 248, 248);
+
+}
+/* blog section */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.highlights{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.content img{
+    width: 500px;
+}
+.description {
+    padding: 10px 0px 10px;
+    font-weight: 700;
+    color: #9f9f9f;
+}
+h2{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 600px) {
+    .content > img{
+        width: 200px;
+    }
+    .togglebutton {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .main-body {
+        left: 0;
+    }
+    .second-body {
+        left: 0;
+        width: 80%;
+    }
+    .column-footer {
+        left: 0;
+        width: 90%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .h3 {
+        font-size: .2rem;
+    }
+    em {
+        font-size: 1rem;
+    }
+    .full-logo > *{
+        width: 150px;
+        height: 150px;
+    }
+    .main-body {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro {
+        width: 80%;
+    }
+    .icons img{
+        width: 40px;
+    }
+    .footer > *{
+        font-size: .5rem;
+    }
+    .activate{
+        display: block;
+    }
+    .menu-title {
+        width: 180px;
+    }
+    .menu-title > *{
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+@media (min-width: 600px) {
+    .sidebar {
+        display: block;
+    }
+}

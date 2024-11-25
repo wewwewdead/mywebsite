@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pagetop {
+    width: 100%;
+    position: fixed;
+    height: 56px;
+    display: flex;
+    background-color: white;
+    z-index: 10;
+}
+.logo{
+    display: flex;
+    height: 100%;
+    padding-left: 10px;
+}
+.nav-bar {
+    position: fixed;
+    z-index: 2;
+    top: 56px;
+    background-color: #1C325B;
+    display: flex;
+    width: 100%;
+    z-index: 5;
+    height: 25px;
+}
+.togglebutton {
+    display: none;
+    background-color: #0f1b31;
+    border: none;
+    color: white;
+    padding-left:10px ;
+    padding-right:10px ;
+}
+.selection::-webkit-scrollbar {
+    display: none;
+}
+.selection {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.selection > *{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.sidebar {
+    display: none;
+    height: 100%;
+    width: 230px;
+    background-color: transparent;
+    position: fixed;
+    z-index: 4;
+}
+.menu {
+    background-color: #e6e6e6;
+    position: relative;
+    width: 230px;
+    height: 100%;
+    top: 81px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+.menu-title {
+    padding: 10px 25px;
+    text-align: left;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: 550;
+    text-align: center;
+}
+.main-body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    left: 230px;
+    position: relative;
+    top: 100px;
+    padding: 16px 32px 32px 32px;
+    height: 100%;
+    gap: 20px;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2 {
+    padding-top: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+.box{
+    width: 100%;
+    background-color: #ffdddd;
+    padding: 20px ;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.column-footer {
+    left: 230px;
+    width: 73%;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color:  rgb(248, 248, 248);
+
+}
+
+@media (max-width: 600px) {
+    .main-body {
+        left: 0;
+        width: 90%;
+    }
+    .box{
+        left: 0;
+        width: 90%;
+    }
+    .column-footer {
+        left: 0;
+        width: 90%;
+    }
+    .togglebutton {
+        display: inline-block;
+    }
+    .activate {
+        display: block;
+    }
+    .menu-title > *{
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+@media (min-width: 600px) {
+    .sidebar {
+        display: block;
+    }
+}

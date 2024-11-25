@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="aboutme.css">
+</head>
+<body>
+    <div class="pagetop">
+        <div class="logo"><a href="./loren.html"><img src="./assets/images/logo.png" alt="" width="60px"></a></div>
+    </div>
+    <div class="nav-bar">
+        <button class="togglebutton">☰</button>
+        <div class="selection">
+        <a href="./index.html">Home</a>
+        <a href="./aboutme.html">About me</a>
+        <a href="">The Founder</a>
+        <a href="./loren.html">The Loren</a>
+        <a class="last-item" href="">FAQ</a>
+        </div>
+        
+    </div>
+    <div class="sidebar">
+        <div class="menu">
+            <h2 class="menu-title"><em>My blogs</em></h2>
+            <p><a href="./blog1.html">If I can go back to 2017</a></p>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="left card">
+            <h3 class="founder">FOUNDER</h3>
+            <h1 class="name">John Mathew Loren, Self Taught Developer</h1>
+            <h5>Web developer and Factory worker</h5>
+            <div class="socials">
+                <div class="icons"><img src="./assets/images/socials/facebook.png" alt="" style='width: 15px; height: 15px;'><a href="https://www.facebook.com/johnmathew.loren/">Facebook</a></div>
+                <div class="icons"><img src="./assets/images/socials/instagram.png" alt="" style="width: 15px; height: 15px;"><a href="https://www.instagram.com/johnmathewloren/">Instagram</a></div>
+                <div class="icons"><img src="./assets/images/socials/twitter.png" alt="" style="width: 15px; height: 15px;"><a href="https://x.com/LorenJohnmathew">Twitter</a></div>
+            </div>
+            <h5 class="aboutme">About me</h5>
+            <p>I'm John Mathew Loren, I'm a developer with a passion of creativity.
+                I like to create something that interest me. I draw portraits using color pencils and I can also draw using <em>Photoshop</em>.
+            </p>
+            <p>I started making artworks when I was 14 years old, it started when I joined facebook group called <em>"Guhit Pinas</em>,
+            that time <em>I've made 100 portraits in just a year.</em></p>
+            <p>I realized that my passion was creating something that interest me and share it to people.</p>
+            <p>Now I found a new hobby which is <em>programming</em>, learning how to program was fun, making concepts and solving bugs kinda make me feel alive. It started when I'm planning to buy a laptop.
+            I asked my older brother that I'm planning to buy a laptop, and he suddenly replied to me to start learning how to program. He has already have a Udemy course 
+        called <em>100 days of code by Angela Yu</em>.</p>
+        <p>Learning was fun the course is beginner friendly and python syntax is not that hard to grasp.
+            After I learned the fundamentals of coding and become profecient in python, then I planned to create a social media app.
+            I switched to javascript, html and css as my new programming langauge.
+        </p>
+        </div>
+        <div class="right card">
+            <div class="profile"><img src="./assets/images/profile/loren.jpeg.jpg" alt="" style="width: 200px;"></div>
+            <p class="profile-name">John Mathew Loren</p>
+            <p class="position">FOUNDER / CO-FOUNDER</p>
+            <p class="email">Email: johnmathewloren27@gmail.com</p>
+        </div>
+    </div>
+    <div class="second-body">
+    </div>
+    <div class="column-footer">
+        <div class="footer"><p>© The Loren</p></div>
+    </div>
+    
+ 
+    
+</body>
+<script>
+    const sidebar = document.querySelector('.sidebar');
+    const toggleButton = document.querySelector('.togglebutton');
+
+    toggleButton.addEventListener('click', e => {
+
+        sidebar.classList.toggle('activate');
+    });
+    document.addEventListener('click', e => {
+        if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
+            sidebar.classList.remove('activate')
+        }
+    });
+</script>
+</html>

@@ -57,9 +57,9 @@
 
     const arrow = document.querySelector('.arrow');
     const dropdown = document.querySelector('.dropdown');
-    const box = document.querySelector('.box');
+    const questionBox = document.querySelector('.question_box');
 
-    box.addEventListener('click', e => {
+    questionBox.addEventListener('click', e => {
         dropdown.classList.toggle('activate-dropdown');
         arrow.classList.toggle('arrow-rotate');
     });
@@ -67,9 +67,7 @@
         if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
             sidebar.classList.remove('activate');
         }
-    });
-    document.addEventListener('click', e => {
-        if(!box.contains(e.target) && !dropdown.contains(e.target)) {
+        if(!questionBox.contains(e.target) && !dropdown.contains(e.target)) {
             dropdown.classList.toggle('activate-dropdown');
             arrow.classList.toggle('arrow-rotate');
         }

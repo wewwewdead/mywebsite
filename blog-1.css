@@ -214,7 +214,13 @@ p{
 }
 @media (max-width: 600px) {
     .content > img{
-        width: 350px;
+        width: 265px;
+    }
+    .content > * {
+        font-size: .8rem;
+    }
+    .highlights {
+        font-size: .8rem;
     }
     .togglebutton {
         display: inline-block;
@@ -280,6 +286,6 @@ p{
 }
 @media (max-width: 300px) {
     .content > img{
-        width: 250px;
+        width: 200px;
     }
 }

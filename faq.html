@@ -68,7 +68,7 @@
             sidebar.classList.remove('activate');
         }
         if(!questionBox.contains(e.target) && !dropdown.contains(e.target)) {
-            dropdown.classList.toggle('activate-dropdown');
+            dropdown.classList.remove('activate-dropdown');
             arrow.classList.toggle('arrow-rotate');
         }
     });

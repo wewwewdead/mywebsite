@@ -64,8 +64,10 @@
         arrow.classList.toggle('arrow-rotate');
     });
     document.addEventListener('click', e => {
+        e.stopPropagation();
         if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
             sidebar.classList.remove('activate');
+            }
         }
         if(!questionBox.contains(e.target) && !dropdown.contains(e.target)) {
             dropdown.classList.toggle('activate-dropdown');

@@ -67,7 +67,7 @@
         if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
             sidebar.classList.remove('activate')
         };
-        if(!box.contains(e.target) && !dropdown.contains(e.target)) {
+        if(!box.contains(e.target) && !dropdown.contains(e.target) || !sidebar.contains(e.target)) {
             dropdown.classList.toggle('activate-dropdown');
             arrow.classList.toggle('arrow-rotate');
         }

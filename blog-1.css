@@ -275,5 +275,11 @@ p{
 @media (min-width: 600px) {
     .sidebar {
         display: block;
+
+    }
+}
+@media (max-width: 300px) {
+    .content > img{
+        width: 250px;
     }
 }

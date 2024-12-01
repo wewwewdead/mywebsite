@@ -13,11 +13,11 @@
     <div class="nav-bar">
         <button class="togglebutton">☰</button>
         <div class="selection">
-        <a href="./index.html">Home</a>
-        <a href="./aboutme.html">About me</a>
-        <a href="">The Founder</a>
-        <a href="./loren.html">The Loren</a>
-        <a class="last-item" href="">FAQ</a>
+        <a class="nav-icons" href="./index.html">Home</a>
+        <a class="nav-icons" href="./aboutme.html">About me</a>
+        <a class="nav-icons" href="">The Founder</a>
+        <a class="nav-icons" href="./loren.html">The Loren</a>
+        <a class="nav-icons" href="./faq.html">FAQ</a>
         </div>
         
     </div>
@@ -76,10 +76,6 @@
 
         sidebar.classList.toggle('activate');
     });
-    document.addEventListener('click', e => {
-        if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
-            sidebar.classList.remove('activate')
-        }
-    });
+    
 </script>
 </html>

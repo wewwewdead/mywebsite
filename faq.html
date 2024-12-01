@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <div class="pagetop">
+        <div class="logo"><a href="./loren.html"><img src="./assets/images/logo.png" alt="" width="60px"></a></div>
+    </div>
+    <div class="nav-bar">
+        <button class="togglebutton">☰</button>
+        <div class="selection">
+        <a class="nav-icons" href="./index.html">Home</a>
+        <a class="nav-icons" href="./aboutme.html">About me</a>
+        <a class="nav-icons" href="">The Founder</a>
+        <a class="nav-icons" href="./loren.html">The Loren</a>
+        <a class="nav-icons" class="last-item" href="./faq.html">FAQ</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="menu">
+            <h2 class="menu-title"><em>My blogs</em></h2>
+            <p><a href="./blog1.html">If I can go back to 2017</a></p>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="content">
+        <h2>Frequently Asked Questions</h2>
+        <div class="question">
+            <div class="box">
+                <div class="question_box"><h6>What can I do with The Loren? <div class="arrow"></div></h6></div>
+            </div>
+        </div>
+        <div class="dropdown"><p>With Loren, you can share your poems, blogs, stories and artworks.
+            You can collaborate with other creators and learn with each other.
+        </p></div>
+    </div>
+    </div>
+    
+    <div class="column-footer">
+        <div class="footer"><p>© The Loren</p></div>
+    </div>
+    
+</body>
+<script>
+    const sidebar = document.querySelector('.sidebar');
+    const toggleButton = document.querySelector('.togglebutton');
+
+    toggleButton.addEventListener('click', e => {
+
+        sidebar.classList.toggle('activate');
+    });
+    document.addEventListener('click', e => {
+        if(!sidebar.contains(e.target) && toggleButton !== e.target)  {
+            sidebar.classList.remove('activate')
+        }
+    });
+
+    const arrow = document.querySelector('.arrow');
+    const dropdown = document.querySelector('.dropdown');
+    const box = document.querySelector('.box');
+
+    box.addEventListener('click', e => {
+        dropdown.classList.toggle('activate-dropdown');
+        arrow.classList.toggle('arrow-rotate');
+    });
+
+</script>
+</html>

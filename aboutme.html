@@ -73,9 +73,12 @@
     const toggleButton = document.querySelector('.togglebutton');
 
     toggleButton.addEventListener('click', e => {
-        if (!sidebar.contains(e.target) && !toggleButton.contains(e.target)) {
-        sidebar.classList.remove('activate');
-            }
+        sidebar.classList.toggle('activate');
+    });
+    document.addEventListener('click', e => {
+        if(!sidebar.contains(e.target) && !toggleButton.contains(e.target) {
+            sidebar.classList.remove('activate');
+        });
     });
     
 </script>

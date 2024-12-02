@@ -235,7 +235,7 @@ em{
         font-size: .2rem;
     }
     em {
-        font-size: 1rem;
+        font-size: 1.9rem;
     }
     .full-logo > *{
         width: 150px;
@@ -265,10 +265,10 @@ em{
     }
     .left p{
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .right p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .activate{
         display: block;

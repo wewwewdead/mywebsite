@@ -217,10 +217,10 @@ p{
         width: 265px;
     }
     .content > * {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .highlights {
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
     .togglebutton {
         display: inline-block;

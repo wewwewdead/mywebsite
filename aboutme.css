@@ -66,8 +66,8 @@
     width: 230px;
     height: 100%;
     top: 81px;
-    overflow-x: scroll;
-    overflow-y: none;
+    overflow-y: scroll;
+    overflow-x: none;
     scrollbar-width: thin;
 }
 .menu-title {

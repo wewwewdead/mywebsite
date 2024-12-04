@@ -41,7 +41,7 @@
 }
 .selection {
     overflow-x: scroll;
-    overflow-y: none;
+    overflow-y: hidden;
     white-space: nowrap;
 }
 .selection > *{
@@ -67,7 +67,7 @@
     width: 230px;
     height: 100%;
     top: 81px;
-    overflow-x: none;
+    overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-width: thin;
 }

@@ -41,6 +41,7 @@
 }
 .selection {
     overflow-x: scroll;
+    overflow-y: none;
     white-space: nowrap;
 }
 .selection > *{

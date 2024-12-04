@@ -41,7 +41,7 @@
 }
 .selection {
     overflow-x: scroll;
-    overflow-y: none;
+    overflow-y: hidden;
     white-space: nowrap;
 }
 .selection > *{
@@ -68,7 +68,7 @@
     height: 100%;
     top: 81px;
     overflow-y: scroll;
-    overflow-x: none;
+    overflow-x: hidden;
     scrollbar-width: thin;
 }
 .menu-title{

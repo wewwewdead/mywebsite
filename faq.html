@@ -59,9 +59,6 @@
     const toggleButton = document.querySelector('.togglebutton');
 
     toggleButton.addEventListener('click', e => {
-        if(!sidebar.contains(e.target) && !toggleButton.contains(e.target)) {
-            sidebar.classList.remove('activate);
-        }
         sidebar.classList.toggle('activate');
     });
 
@@ -75,6 +72,10 @@
             const answer = document.getElementById(`answer${number}`);
             answer.style.display = (answer.style.display === 'none') ? 'flex' : 'none';
         })
+    });
+    document.addEventListener('click', e => {
+        if(!sidebar.contains(e.target) && !toggleButton.contains(e.target)) {
+            sidebar.classList.remove('activate);}
     });
 
 </script>

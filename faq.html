@@ -62,6 +62,11 @@
         sidebar.classList.toggle('activate');
     });
 
+    document.addEventListener('click', e => {
+        if(!sidebar.contains(e.target) && !toggleButton.contains(e.target)) {
+            sidebar.classList.remove('activate');}
+    });
+
     const arrow = document.querySelector('.arrow');
     const dropdown = document.querySelector('.dropdown');
     const questions = document.querySelectorAll('.question');
@@ -73,10 +78,6 @@
             answer.style.display = (answer.style.display === 'none') ? 'flex' : 'none';
         })
     });
-    document.addEventListener('click', e => {
-        if(!sidebar.contains(e.target) && !toggleButton.contains(e.target)) {
-            sidebar.classList.remove('activate);}
-    });
-
+    
 </script>
 </html>

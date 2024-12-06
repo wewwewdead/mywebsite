@@ -30,18 +30,18 @@
     <div class="main-body">
         <div class="content">
         <h2>Frequently Asked Questions</h2>
-        <div class="question" data-number='1'>
+        <div class="question">
             <div class="box">
-                <div class="question_box"><h6>What can I do with The Loren? <div class="arrow"></div></h6></div>
+                <div class="question_box" data-id="1"><button>What can I do with The Loren?</button><div class="arrow"></div></div>
             </div>
         </div>
         <div class="dropdown" id="answer1"><p>With Loren, you can share your poems, blogs, stories and artworks.
             You can collaborate with other creators and learn with each other.
         </p></div>
 
-        <div class="question" data-number='2'>
+        <div class="question">
             <div class="box">
-                <div class="question_box"><h6>Is The Loren free to use? <div class="arrow"></div></h6></div>
+                <div class="question_box" data-id="2"><button> Is The Loren free to use?</button><div class="arrow"></div></div>
             </div>
         </div>
         <div class="dropdown" id="answer2"><p>Yes, it is free to use soon.
@@ -59,25 +59,21 @@
     const toggleButton = document.querySelector('.togglebutton');
 
     toggleButton.addEventListener('click', e => {
-        sidebar.classList.toggle('activate');
-    });
 
-    document.addEventListener('click', e => {
-        if(!sidebar.contains(e.target) && !toggleButton.contains(e.target)) {
-            sidebar.classList.remove('activate');}
+        sidebar.classList.toggle('activate');
     });
 
     const arrow = document.querySelector('.arrow');
     const dropdown = document.querySelector('.dropdown');
-    const questions = document.querySelectorAll('.question');
+    const questions = document.querySelectorAll('.question_box');
 
     questions.forEach(question => {
         question.addEventListener('click', e => {
-            const number = question.dataset.number;
-            const answer = document.getElementById(`answer${number}`);
-            answer.style.display = (answer.style.display === 'none') ? 'flex' : 'none';
+            const id = question.dataset.id;
+            const answer = document.getElementById(`answer${id}`);
+            answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'flex' : 'none';
         })
     });
-    
+
 </script>
 </html>

@@ -136,12 +136,20 @@
     background-color: transparent;
     box-shadow: none;
 }
-.question_box > *{
-    font-size:  1.2rem;
-    font-weight: 450;
+.question_box {
     display: flex;
     align-items: center;
+}
+button {
+    border: none;
     cursor: pointer;
+    background-color: transparent;
+}
+button > *{
+    font-size:  1.2rem;
+    font-weight: 450;
+    
+    
 }
 .arrow {
     transition: 0.2s;
